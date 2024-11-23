@@ -1,0 +1,51 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Desain background dan font */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8d8d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+
+/* Desain untuk container */
+.container {
+    position: relative;
+}
+
+/* Efek animasi untuk teks */
+#message {
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards, scaleUp 3s ease-in-out forwards;
+    color: #e91e63;
+}
+
+/* Animasi teks muncul dan berkembang */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
